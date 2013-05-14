@@ -26,3 +26,8 @@ attribute :channel, :kind_of => String
 attribute :options, :kind_of => String
 attribute :directives, :kind_of => Hash, :default => {}
 attribute :preferred_state, :default => 'stable'
+
+def initialize(*args)
+  super
+  @action = :install
+end

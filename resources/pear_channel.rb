@@ -26,3 +26,8 @@ attribute :channel_xml, :kind_of => String
 # TODO add authenticated channel support!
 # attribute :username, :kind_of => String
 # attribute :password, :kind_of => String
+
+def initialize(*args)
+  super
+  @action = :discover
+end
