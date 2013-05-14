@@ -23,7 +23,7 @@ lib_dir = kernel['machine'] =~ /x86_64/ ? 'lib64' : 'lib'
 default['php']['install_method'] = 'package'
 
 case node["platform"]
-when "centos", "redhat", "fedora"
+when "centos", "redhat", "fedora", "amazon", "scientific"
   default['php']['conf_dir']      = '/etc'
   default['php']['ext_conf_dir']  = '/etc/php.d'
   default['php']['fpm_user']      = 'nobody'
