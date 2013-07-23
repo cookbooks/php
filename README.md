@@ -1,3 +1,6 @@
+**This cookbook has been superceded by https://github.com/opscode-cookbooks/php**
+
+
 Description
 ===========
 
